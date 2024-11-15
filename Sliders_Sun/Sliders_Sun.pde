@@ -1,7 +1,7 @@
 PGraphics result;
 
 void setup () {
-fullScreen();
+  size(800, 800);
   gui();
   result = createGraphics(600, 600);
 }
