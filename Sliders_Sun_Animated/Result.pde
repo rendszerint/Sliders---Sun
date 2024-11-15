@@ -1,6 +1,6 @@
 float circles, circleW;
 float rectangles = 24;
-float rectW = 360 / rectangles;
+float w2 = 360 / rectangles;
 
 void drawResult() {
   result.beginDraw();
@@ -24,7 +24,7 @@ void drawResult() {
   result.rectMode(CENTER);
   for (int i = 0; i < rectangles; i++) {
     result.push();
-    result.rotate(radians(i*rectW));
+    result.rotate(radians(i*w2));
     result.translate(225, 0);
     result.rect(0, 0, 150, 30);
     result.pop();

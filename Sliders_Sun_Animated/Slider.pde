@@ -2,6 +2,8 @@ PFont f;
 import controlP5.*;
 ControlP5 cp5;
 
+
+
 void gui() {
   f = createFont("PPNeueMontreal-Medium.otf", 14);
   ControlFont font = new ControlFont(f);
@@ -14,6 +16,7 @@ void gui() {
     .setColorForeground(color(#FFFFFF))
     .setColorActive(color(#FFFFFF))
     .setColorValueLabel(color(0))
+
     .setFont(font)
 
     .setPosition(0, 0)
@@ -28,12 +31,12 @@ void gui() {
     .setColorForeground(color(#FFFFFF))
     .setColorActive(color(#FFFFFF))
     .setColorValueLabel(color(0))
+
     .setFont(font)
 
-    .setPosition(0, 40)
-    .setSize(width/4, 30)
+    .setPosition(0,40)
     .setRange(0, 24)
-    .setValue(24)
     .setNumberOfTickMarks(24)
+    .setSize(width/4, 30)
     ;
 }
